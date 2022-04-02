@@ -101,3 +101,15 @@ WYSIWYG(What You See Is What You Get : 네가 보는것이 얻는것이다)
 
 - 수평선(Horizontal Rule) : hr
   - 단락를 구분하는 구분선
+  - 빈 요소
+
+### HTML Link
+
+- a(nchor) : 하이퍼링크 연결 태그
+- href(hypertext reference) : 목적지 정보 제공 속성(atrribute)
+
+```
+<a href="url">텍스트</a>
+```
+
+- URL(Uniform Resource Locator) : 파일위치식별자

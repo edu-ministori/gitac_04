@@ -43,7 +43,6 @@
       - Android : Java -> Kotlin
       - IOS : Objective C -> Swift
   - Front End 개발 / Publishing
-    -
 
 - Back End
   - 사용자가 제어하지 못하는 영역

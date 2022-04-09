@@ -145,3 +145,53 @@ Ex) 192.168.0.1
 IP 또는 Domain 주소/상세경로/파일정보
 Ex) www.w3schools.com/html/default.asp
 ```
+
+### HTML table
+
+```
+<table> : 테이블 작성
+  <tr> : table row - 행
+    <th></th> : table header - 열제목
+  </tr>
+  <tr>
+    <td></td> : table data - 데이터
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+</table>
+```
+
+### HTML List
+
+- ul(Unordered List) : 순서없는 목록
+  - 기호로 표시
+- ol(Ordered List) : 순서있는 목록
+  - 숫자로 표시(알파벳, 한글)
+- li(List Item) : 목록 아이템
+
+```
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JS</li>
+</ul>
+
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JS</li>
+</ol>
+```
+
+- Description List : 설명목록
+  - dl(Description List)
+  - dt(Description title)
+  - dd(Description Data)
+
+```
+<dl>
+  <dt>목록 주제</dt>
+  <dd>목록 설명</dd>
+</dl>
+```

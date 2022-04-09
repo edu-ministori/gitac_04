@@ -6,6 +6,7 @@
 
   - Text Contents
   - Image, Video, Audio Contents
+    - Embed(ed) Contents
 
 - Structure
 
@@ -148,6 +149,8 @@ Ex) www.w3schools.com/html/default.asp
 
 ### HTML table
 
+** https://www.tablesgenerator.com/html_tables
+
 ```
 <table> : 테이블 작성
   <tr> : table row - 행
@@ -169,6 +172,8 @@ Ex) www.w3schools.com/html/default.asp
 - ol(Ordered List) : 순서있는 목록
   - 숫자로 표시(알파벳, 한글)
 - li(List Item) : 목록 아이템
+- 중첩목록(Nested List)
+  - 목록안에 작은 목록이 포함되는 경우
 
 ```
 <ul>
@@ -194,4 +199,26 @@ Ex) www.w3schools.com/html/default.asp
   <dt>목록 주제</dt>
   <dd>목록 설명</dd>
 </dl>
+```
+
+### HTML Image
+
+- img
+- src(source) : 이미지 파일 경로/파일명 표시
+- alt(ernative) : 대체 텍스트
+
+```
+<img src="www.naver.com/html/photo.jpg" alt="이미지 설명">
+```
+
+### HTML Video
+
+- video
+
+- 
+
+```
+<video>
+  <source src="www.daum.net/video/movie.mp4" type="video/mp4">
+</video>
 ```

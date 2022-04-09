@@ -214,11 +214,25 @@ Ex) www.w3schools.com/html/default.asp
 ### HTML Video
 
 - video
+  - 이름만 사용하는 attribute는 on/off 기능 형태
+  - controls : 재생 컨트롤을 화면에 표시
+  - autoplay : 자동 재생
+  - muted : 소리 제거
 
-- 
 
 ```
 <video>
   <source src="www.daum.net/video/movie.mp4" type="video/mp4">
 </video>
 ```
+
+### Youtube Video
+
+- option, parameter(매개변수)
+
+https://developers.google.com/youtube/player_parameters?hl=ko#autoplay
+
+```
+<iframe src="youtube-url?parameter1=0&parameter2=1&parameter3=0"></iframe>
+```
+

@@ -341,7 +341,7 @@ href="/html/home.html"
 src="/images/photo.jpg"
 ```
 
-head 태그 요소, 비트계산 - ip, 문자표시, 색표시
+비트계산 - ip, 문자표시, 색표시
 
 ## Block & Inline
 

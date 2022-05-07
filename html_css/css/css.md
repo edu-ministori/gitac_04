@@ -378,3 +378,55 @@ Ex) padding : 20px, border : 1px, 박스 전체 크기 : 300px => width:?
 - 가로배치 박스들을 포한하는 부모요소가 반드시 있어야 함
 - 해당 부모요소에 display:flex; 를 적용하면 자식요소들이 가로배치가 적용됨
 
+## overflow
+
+- 박스의 자식요소, 콘텐츠가 박스 크기를 넘칠때 스타일 지정하는 속성
+
+- visible : 기본값, 넘치는 콘텐츠가 표시
+- hidden : 넘치는 콘텐츠 부분이 숨겨짐(잘림)
+- scroll : 스크롤바 생성(콘텐츠 크기에 상관없음)
+- auto : 콘텐츠가 넘칠때 스크롤바 생성
+
+## 이미지 표시 방법
+
+- 컨텐츠 표시
+  - img
+
+- 배경/디자인 표시
+  - background-image
+
+## 반응형 웹 디자인
+
+- Responsive Web
+  - OSMU(One Source Multi Use, Source : HTML Contents)
+    - HTML file => One
+    - CSS => Multi
+
+- Adaptive Web
+  - MSMU(Multi Source Multi Use)
+  - PC Web, Mobile Web 분리
+
+## 반응형 웹 디자인 기능
+
+- viewport
+  - <meta> 태그 삽입
+  - HTML Contents가 해당 디바이스 화면에 최적화되어 표시
+
+- media query
+  - @media
+  - 미디어 종류와 해상도 구분
+
+- 모니터(스크린) 해상도 개념
+  - pixel ratio : pc 픽셀을 기준으로 했을 때 모바일 디바이스의 밀도 배수
+  - css width/height : 모바일 디바이스의 해상도에서 밀도를 1을 기준으로 한 크기\
+
+- 해상도 구간 나누기
+  - 디바이스나 상황에 따라서 맞춰 주어야 함.
+  - Break Point(변경점)
+    - PC : 1920px
+    - tablet : 1024px
+    - smart phone : 640px
+  - 해상도 구간 지정
+    - <640px
+    - <1024px
+    - <1920px

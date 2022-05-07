@@ -197,3 +197,184 @@ p{
   font-weight:normal;
 }
 ```
+
+## CSS link
+
+- 4가지 상태 구분
+- link, visited, hover, active
+
+## CSS 상속, cascading, 우선 순위
+
+- 상속
+
+  - 포함 관계의 HTML 구조에서 부모요소에 적용한 CSS 속성이 자식요소에도 적용되는 것
+  - 모든 CSS 속성이 상속되는 것은 아님
+
+- cascading, 우선순위
+  - cascading : 나중에 적용한 CSS가 최종 적용되어 표시
+  - 우선 순위 : 선택자의 우선 순위에 따라서 적용되는 순서를 변경할 수 있음
+    - id : 100
+    - class : 10
+    - tag : 1
+
+## 네이밍 표기법 : 두개 이상의 단어로 네이밍을 할때 단어사이의 구분
+
+- naming-intro : kebab case : id, class, url 경로
+- naming_intro : snake case : file, folder
+- namingIntro : camel case : js의 변수, 함수 이름
+- NamingIntro : pascal case : js Class 이름
+
+## Box Model
+
+### Height/Width
+
+- 박스 크기 지정
+
+- px : 지정된 값으로 고정
+- %
+  - width : 부모요소를 기준으로 값 비율만큼 지정
+  - height : 자식요소를 기준으로 맞춰짐 => % 지정이 적용되지 않음
+
+### padding
+
+- 방향별 개별 적용
+
+  - padding-top
+  - padding-right
+  - padding-bottom
+  - padding-left
+
+- padding : 축약 표현
+  - 값 4개
+  - 값 3개
+  - 값 2개
+  - 값 1개
+
+\*\* top에만 padding을 적용하는 경우
+
+```
+div{
+  padding-top:100px;
+}
+
+div{
+  padding:100px 0 0 0;
+}
+```
+
+### margin
+
+- padding과 사용방법이 같음
+
+- auto : 왼쪽, 오른쪽 여백을 동일하게 적용 => 박스 가운데 배치
+
+- margin 상쇄(겹침)
+  - 박스가 상하배치되어 있을때 박스 사이의 margin이 큰 margin만 적용되는 것
+
+### border
+
+- border 축약 표현
+
+```
+border : 1px solid red;
+```
+
+- border 방향 추가
+  - border-top
+  - border-right
+  - border-bottom
+  - border-left
+
+## background
+
+### background-color
+
+- 배경 적용 범위 : content, padding 영역에만 적용
+
+### background-image
+
+- url() : 이미지 파일 경로, 파일명
+- 배경이미지가 적용된 영역보다 크기가 작을 때 반복되어 영역을 채워줌
+
+### background-repeat
+
+- repeat : 반복(default)
+- repeat-x : 가로방향 반복
+- repeat-y : 세로방향 반복
+- no-repeat : 반복 안함
+
+### background-position
+
+- left/center/right
+- top/center/bottom
+
+```
+background-position:가로 세로;
+```
+
+### background-attachment
+
+- 배경이미지 고정
+
+- fixed : 배경이미지 고정
+
+## 박스 전체 크기 계산
+
+- width, padding, border, margin 구성 요소의 값을 합산한 값
+- width, padding, border의 값을 합산한 값이 박스의 전체크기
+- margin은 layout 구성시 별도로 합산이 필요함
+
+```
+박스 전체 크기 계산
+div{
+  width:300px;
+  padding:20px;
+  border:1px solid red;
+  margin:30px;
+}
+
+width + padding + border = 300 + 20 * 2 + 1 * 2 = 342px
+
+Ex) padding : 20px, border : 1px, 박스 전체 크기 : 300px => width:?
+
+300 - 40 - 2 = 258px
+```
+
+- box-sizing : box 크기 설정 방식 제어
+  - content-box : content까지 box => width 적용범위가 content까지 영역
+  - border-box : border까지 box => width 적용범위가 border까지 영역
+
+
+## 이미지, 비디오 크기 조정
+
+- 이미지, 비디오에 width, height 둘 중 하나만 적용하는 경우, 다른 길이 속성은 비율 유지가 되면서 자동으로 크기 조정이 됨
+
+- width, height 모두 지정시 이미지는 비율 유지가 깨지면서 각각 적용, 비디오는 각각 적용이 되지만 비율은 계속 유직됨. 영역의 크기만 조정됨
+
+## 인라인 요소의 box model
+
+- 박스 모델의 구성요소가 모두 적용되지 않음
+- 레이아웃 구성요소로 사용하지 않음
+
+## display 속성
+
+- 박스 표시 속성 변경
+  - block -> inline
+  - inline -> block
+  - inline-block : inline의 한줄 표시, block의 box model 속성이 모두 적용
+
+## 배치, 위치지정
+
+- 배치
+  - 여러개의 박스 서로 인접해서 레이아웃을 구성
+  - 박스 모델 적용에 인접해 있는 박스들의 영향을 받을 수 있음
+
+- 위치 지정
+  - 박스 단독으로 특정 위치에 지정되는 것
+  - 박스 모델 적용과 위치 지정에 다른 박스 영향을 받지 않음
+
+## flexbox
+
+- 가로배치 박스들을 포한하는 부모요소가 반드시 있어야 함
+- 해당 부모요소에 display:flex; 를 적용하면 자식요소들이 가로배치가 적용됨
+

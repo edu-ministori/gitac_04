@@ -370,8 +370,9 @@ const a = {
 - Method
   - Access(접근)
   - HTML4 API
-    ```
-    document.
+
+```
+document.
     
-    ```
+```
 

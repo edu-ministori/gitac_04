@@ -367,12 +367,74 @@ const a = {
 
 - Property
 
+```
+HTML 내용
+
+document.innerHTML // DOM 객체의 내용 추가, 변경
+```
+
 - Method
   - Access(접근)
   - HTML4 API
-
 ```
-document.
-    
+<h1 id="heading" class="title">heading</h1>
+
+document.getElementByID('heading')
+document.getElementsByTagName('h1')
+document.getElementsByClassName('title')
 ```
 
+  - HTML5 API
+```
+<h1 id="heading" class="title">heading</h1>
+<h1 class="title">heading</h1>
+
+document.querySelector('#heading')
+document.querySelector('h1')
+document.querySelector('.title')
+
+document.querySelectorAll('h1')
+document.querySelectorAll('.title')
+```
+  - Js 동적 작업
+    - Create
+    - Read
+    - Update
+    - Delete/Remove
+```
+document.createElement()
+document.appendChild() // DOM에 객체를 추가 => 웹페이지에 표시
+document.removeChild()
+```
+
+** 직접 입력한 내용이 페이지에 표시되는 경우 : 정적(static) 내용
+** JS 기능을 통해서 내용이 추가/수정/삭제 되는 경우 : 동적(dynamic) 내용
+
+- 속성 변경
+  - HTML attribute
+```
+element.setAttribute()
+```
+  - CSS property
+```
+element.style.property = value
+```
+** JS로 CSS를 제어할 때는 inline 방식으로만 제어가 가능, JS는 CSS를 직접 제어할 수는 없음
+
+### Form 요소
+
+- input
+  - type="text" : text 한줄 입력
+  - type="password" : password 입력, 내용표시X
+  - type="checkbox" : 중복선택이 가능
+  - type="radio" : 단일선택 가능
+  - type="file" : 파일 업로드
+  - type="submit" : 내용을 서버로 전송 버튼
+  - type="reset" : 입력된 내용을 초기화 버튼
+  - type="button" : 일반 버튼
+
+- select
+  - option 요소를 사용해서 목록의 아이템
+
+- button
+  - submit, reset, button 3가지 type

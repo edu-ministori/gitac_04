@@ -270,12 +270,36 @@ myFunction();
 myFunction();
 ```
 
+- 함수 선언(정의) 형식
+
+```
+function myFunction(){
+  실행코드;
+}
+
+let myFunction = function(){
+  실행코드;
+}
+
+익명함수 : 선언과 동시에 실행
+function(){
+  실행코드;
+}
+```
+
 ### 배열/객체/Class
+
+- 참조형 데이터
+  - 기본형 데이터는 변수 저장공간에 데이터가 직접 저장되지만
+    참조형 데이터는 제3의 공간에 데이터가 저장되고 변수 저장공간에는 데이터가
+    저장된 위치값이 저장됨
 
 - 배열
   - 참조형 데이터
   - 데이터 집합
   - 같은 타입, 같은 의미 데이터
+  - 배열 객체에 포함된 Property, Method 를 사용해서 배열 데이터를
+    좀 더 수월하게 제어할 수 있음
 
 ```
 const a = [1,2,3];
@@ -286,3 +310,56 @@ a[0] = 5; (O)
 배열 변경 불가능
 a = [4,5,6]; (X)
 ```
+
+- 객체
+  - 참조형 데이터
+  - 소속(대상)이 같은 데이터
+  - 각각의 데이터에 name(key)을 붙여서 사용
+  - property(객체 특성/속성)
+    - 일반 데이터의 변수와 같은 역할
+    - 객체 변수
+  - method(객체 기능)
+    - 일반 형태의 함수과 같은 역할
+    - 객체 함수
+  - 객체 데이터는 property, method로 모두 그룹화하는 것이 좋은 방식
+
+```
+const a = {
+  name:'BBB',
+  color:'white'
+}
+
+원소 변경
+a.color = 'red';
+
+객체 변경
+a = {
+  name:'DDD',
+  color:'blue'
+}
+```
+
+- 객체 Method 선언
+
+```
+const a = {
+  name:'BBB',
+  color:'white',
+  showColor: function(){
+    console.log('color : ' + color);
+  }
+}
+```
+
+## 활용
+
+### HTML DOM
+
+- DOM(Document Object Model) : HTML Element를 객체 데이터로 만든 모델
+- javascript에서 DOM에 엑세스하고 제어함으로써 웹페이지 콘텐츠를 제어
+- HTML Contents 제어(CRUD), CSS 스타일 속성 제어
+
+#### DOM 객체
+
+- Property
+- Method

@@ -361,5 +361,17 @@ const a = {
 
 #### DOM 객체
 
+- Javascript
+  - ES5, ES6 : 기본 javascript
+  - HTML DOM : HTML API
+
 - Property
+
 - Method
+  - Access(접근)
+  - HTML4 API
+    ```
+    document.
+    
+    ```
+

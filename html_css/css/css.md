@@ -430,3 +430,18 @@ Ex) padding : 20px, border : 1px, 박스 전체 크기 : 300px => width:?
     - <640px
     - <1024px
     - <1920px
+
+## position
+
+- position 속성과 속성값을 적용하고, 좌표값을 적용해서 박스를 단독으로 위치 지정할 수 있음
+- relative, absolute, fixed
+- 좌표 표시 속성
+  - top, right, bottom, left
+- position:absolute
+  - 좌표 배치는 부모요소를 기준으로 배치
+  - 부모요소에는 position 속성중 하나가 적용되어 있어야 함
+
+## z-index
+
+- 겹쳐있는 박스의 앞뒤 순서 지정
+- 단위없는 정수 사용
